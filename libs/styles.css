@@ -1,0 +1,260 @@
+/* Body Background */
+body {
+    background-color: #ffffff; /* Abu-abu muda untuk latar belakang */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Isi ruang yang tersisa antara header dan footer */
+}
+
+.carousel .carousel-control-prev-icon,
+.carousel .carousel-control-next-icon {
+    filter: invert(1);
+    width: 24px;
+    height: 24px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #ffffff; /* Hijau Tua untuk navbar */
+    padding-top: 15px;  /* Increase the top padding */
+    padding-bottom: 15px;  /* Increase the bottom padding */
+}
+
+/* Navbar Logo Styling */
+.navbar .navbar-brand img {
+    height: 40px;  /* Menentukan tinggi gambar */
+    width: auto;   /* Biarkan lebar menyesuaikan proporsi gambar */
+}
+
+
+/* Navbar Link Styling */
+.navbar-nav .nav-link {
+    font-size: 1.25rem;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 20px;
+    padding: 15px 20px;  /* Increase the vertical padding */
+    color: #2C6B2F;
+}
+
+/* Jumbotron Section */
+.jumbotron {
+    background-color: #2C6B2F; /* Hijau Tua */
+    color: #FFFFFF; /* Teks putih */
+    padding: 5rem 0;
+}
+
+/* Carousel Styling */
+.carousel-inner img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Hot Deals Section */
+.hot-deals-title {
+    color: #FFD700; /* Emas untuk judul promo */
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.card {
+    border: 1px solid #2C6B2F; /* Hijau Tua untuk border */
+    margin-bottom: 20px;
+}
+
+.card-body {
+    background-color: #FFFFFF; /* Putih untuk background card */
+    object-fit: contain; /* Pastikan gambar tidak terpotong */
+}
+
+.card-title {
+    color: #2C6B2F; /* Hijau Tua untuk teks judul */
+}
+
+.card-text {
+    color: #000000; /* Abu-abu gelap untuk teks deskripsi */
+}
+
+.btn-success {
+    background-color: #FFCB2C; /* Emas untuk tombol aksi */
+    border-color: #FFCB2C;
+}
+
+.btn-success:hover {
+    background-color: #FFCB2C; /* Warna emas lebih gelap saat hover */
+    border-color: #FFCB2C;
+}
+
+.card-img-top {
+  transition: transform 0.3s ease; /* Transisi halus */
+}
+
+.card:hover .card-img-top {
+  transform: scale(0.9); /* Zoom-out */
+}
+
+.zoom-out {
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+}
+
+
+/* Footer */
+.footer {
+    margin-top: auto;
+    background-color: #000000;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .footer-container {
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo and Project Info */
+  .footer-logo-info {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between logo and text */
+  }
+  
+  .logo-circle {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* To make image fit inside the circle */
+  }
+  
+  .logo-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .project-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: 'Outfit', sans-serif;
+    text-align: left;
+  }
+  
+  /* Center Text Section */
+  .footer-center {
+    text-align: center;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  /* Contact Card Styling */
+  .contact-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .contact-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-icon {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 5px;
+  }
+  
+  .social-item p {
+    font-size: 12px;
+    margin: 0;
+  }
+
+
+/* Optional: Adjust the active state of navbar items */
+.navbar-nav .nav-link.active {
+    color: #f39c12; /* Highlight active navbar item */
+}
+
+/* Center Carousel Container */
+.carousel-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.custom-btn {
+  color: #FFCB2C;
+}
+
+.car-card {
+  width: 250px; /* Tetapkan lebar tetap */
+  height: 380px; /* Tetapkan tinggi tetap */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  overflow: hidden; /* Mencegah elemen melampaui card */
+  padding: 16px; /* Memberikan ruang di dalam card */
+  box-sizing: border-box; /* Menghitung padding dalam ukuran card */
+}
+
+.car-card img {height: 180px; /* Tetapkan tinggi gambar */
+  width: 100%; /* Memastikan gambar memenuhi lebar container */
+  object-fit: cover; /* Gambar akan memotong agar proporsional */
+  margin-bottom: 10px; /* Spasi bawah untuk memisahkan gambar dari teks */
+}
+
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.promo-card {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+
+
+
+
+

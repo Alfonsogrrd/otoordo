@@ -1,0 +1,208 @@
+
+
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 20px;
+  flex: 1; /* Membuat container mengisi ruang di antara header dan footer */
+}
+.section {
+  background: #000000;
+  margin: 20px 0;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  color: #ffffff;
+}
+.section h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #ffffff;
+}
+.developer-profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.developer-profile .logo {
+    flex: 1;
+    text-align: center;
+}
+
+.developer-profile .details  {
+    color: #ffffff;
+}
+
+.developer-profile .details  h1{
+    color: #ffffff;
+}
+
+.developer-profile .logo img {
+    max-width: 100%;
+    height: auto;
+    padding-left: 10px;
+}
+.developer-profile .details {
+    flex: 1;
+    padding-left: 20px;
+}
+.developer-profile button {
+    background-color: #FFCB2C;;
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.developer-profile .photo img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+.developer-profile button:hover {
+    background-color: #333;
+}
+
+
+
+.footer {
+  background-color: #000000;
+  padding: 10px 0;
+  text-align: center;
+  color: #ffffff;
+  margin-top: auto; /* Membuat footer tetap di bawah */
+}
+
+/* Footer Container */
+  .footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Logo and Project Info */
+  .footer-logo-info {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Space between logo and text */
+  }
+  
+  .logo-circle {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* To make image fit inside the circle */
+  }
+  
+  .logo-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .project-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: 'Outfit', sans-serif;
+    text-align: left;
+  }
+  
+  /* Center Text Section */
+  .footer-center {
+    text-align: center;
+    font-size: 14px;
+    color: #FFFFFF;
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  /* Contact Card Styling */
+  .contact-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+  }
+  
+  .contact-title {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .social-media {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .social-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .social-icon {
+    width: 45px;
+    height: 45px;
+    margin-bottom: 5px;
+  }
+  
+  .social-item p {
+    font-size: 12px;
+    margin: 0;
+  }
+
+  /* Navbar */
+.navbar {
+  background-color: #ffffff; /* Hijau Tua untuk navbar */
+  padding-top: 15px;  /* Increase the top padding */
+  padding-bottom: 15px;  /* Increase the bottom padding */
+}
+
+/* Navbar Logo Styling */
+.navbar .navbar-brand img {
+  height: 40px;  /* Menentukan tinggi gambar */
+  width: auto;   /* Biarkan lebar menyesuaikan proporsi gambar */
+}
+
+
+/* Navbar Link Styling */
+.navbar-nav .nav-link {
+  font-size: 1.25rem;
+  font-family: 'Poppins', sans-serif;
+  margin-right: 20px;
+  padding: 15px 20px;  /* Increase the vertical padding */
+  color: #2C6B2F;
+}
